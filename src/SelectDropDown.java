@@ -28,6 +28,7 @@ public class SelectDropDown {
 		select.selectByValue("level10");
 		Thread.sleep(2000);
 
+    /*close popup*/
 		driver.findElement(By.xpath("//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]")).click();
 
 		driver.close();
