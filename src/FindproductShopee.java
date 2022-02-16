@@ -34,11 +34,11 @@ public class FindproductShopee {
 	    
 		System.out.println("Total result is " + links.size());
 	      
-	    for (int i = 1; i<=links.size(); i = i+1) {
+	        for (int i = 1; i<=links.size(); i = i+1) {
 	         
-	    System.out.println("Name of Link " + i + links.get(i).getAttribute("src"));
+	        System.out.println("Name of Link " + i + links.get(i).getAttribute("src"));
 		
-	    driver.close();
+	        driver.close();
 	}
 	}
 }
