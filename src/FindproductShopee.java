@@ -13,7 +13,7 @@ public class FindproductShopee {
 		
 		driver.get("https://shopee.vn/");
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		
 		Thread.sleep(3000);
 		
@@ -30,17 +30,15 @@ public class FindproductShopee {
 		
 		Thread.sleep(3000);
 		
-		
-		java.util.List<WebElement> links = driver.findElements(By.tagName("a"));
+		java.util.List<WebElement> links = driver.findElements(By.tagName("img"));
 	    
-		System.out.println("Number of Links in the Page is " + links.size());
+		System.out.println("Total result is " + links.size());
 	      
 	    for (int i = 1; i<=links.size(); i = i+1) {
 	         
-	    System.out.println("Name of Link# " + i + links.get(i).getText());
+	    System.out.println("Name of Link " + i + links.get(i).getAttribute("src"));
 		
-	
-		//driver.close();
+	    driver.close();
 	}
 	}
 }
